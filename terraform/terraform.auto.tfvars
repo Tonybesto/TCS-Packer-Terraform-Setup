@@ -25,7 +25,7 @@ ami-nginx = "ami-0181658024188050b"
 
 ami-sonar = "ami-03bc2d04b59f50017"
 
-keypair = "devops"
+keypair = "devop"
 
 # Ensure to change this to your acccount number
 account_no = "576440278504"
