@@ -7,3 +7,15 @@
 #     encrypt        = true
 #   }
 # }
+
+terraform {
+  
+  backend "remote" {
+    organization = "TCS-Tony"
+
+    workspaces {
+        name =  "TCS-Packer-Terraform-Setup"
+
+    }
+  }
+}
