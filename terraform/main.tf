@@ -110,9 +110,9 @@ module "RDS" {
 # The Module creates instances for jenkins, sonarqube abd jfrog
 module "compute" {
   source          = "./modules/compute"
-  ami-jenkins     = var.ami
-  ami-sonar       = var.ami
-  ami-jfrog       = var.ami
+  ami-jenkins     = var.ami-jenkins
+  ami-sonar       = var.ami-sonar
+  ami-jfrog       = var.ami-jfrog
   subnets-compute = module.VPC.public_subnets-1
   sg-compute      = [module.security.ALB-sg]
   keypair         = var.keypair
