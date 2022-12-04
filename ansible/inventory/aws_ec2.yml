@@ -16,9 +16,9 @@ filters:
     - TCS-nginx
     - TCS-tooling
     - TCS-wordpress
-    # - TCS-sonarqube
-    # - TCS-artifactory
-    # - TCS-Jenkins
+    - TCS-sonarqube
+    - TCS-artifactory
+    - TCS-Jenkins
   instance-state-name : running
   
 hostnames:
