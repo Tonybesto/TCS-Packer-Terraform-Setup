@@ -36,13 +36,13 @@ http {
         listen       443 http2 ssl;
         listen       [::]:443 http2 ssl;
         root          /var/www/html;
-        server_name  *.shallom.tk;
+        server_name  *.mytoolz.tk;
         
         
      
         
-        ssl_certificate /etc/ssl/certs/RCR.crt;
-        ssl_certificate_key /etc/ssl/private/RCR.key;
+        ssl_certificate /etc/ssl/certs/TCS.crt;
+        ssl_certificate_key /etc/ssl/private/TCS.key;
         ssl_dhparam /etc/ssl/certs/dhparam.pem;
 
       
@@ -54,7 +54,7 @@ http {
          
         location / {
             proxy_set_header             Host $host;
-            proxy_pass                   https://internal-ialb-396873561.us-east-1.elb.amazonaws.com/; 
+            proxy_pass                   https://internal-ialb-1958058785.us-east-1.elb.amazonaws.com/; 
            }
     }
 }
