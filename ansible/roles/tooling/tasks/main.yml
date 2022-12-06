@@ -9,7 +9,7 @@
 
 - name: install httpd on the webserver
   ansible.builtin.yum:
-    enablerepo: "BaseOS,AppStream"
+    # enablerepo: "BaseOS,AppStream"
     name: "httpd"
     state: present
 
