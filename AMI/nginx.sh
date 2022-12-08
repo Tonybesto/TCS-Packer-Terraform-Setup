@@ -1,6 +1,7 @@
 #!/bin/bash
-sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-sudo yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm 
+sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
+sudo sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+ sudo dnf install http://rpms.remirepo.net/enterprise/remi-release-9.rpm
 sudo yum install -y mysql wget vim telnet htop git python3 net-tools 
 sudo systemctl start chronyd
 sudo systemctl enable chronyd
