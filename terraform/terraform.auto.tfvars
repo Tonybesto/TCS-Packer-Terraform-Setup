@@ -21,7 +21,7 @@ ami-web = "ami-01b348332f2551f69"
 
 ami-bastion = "ami-0fea86996afa9133b"
 
-ami-nginx = " ami-04bc765f117e51820"
+ami-nginx = "ami-089ede0fc7b179343"
 
 ami-sonar = "ami-0f1cf493e255b6777"
 
