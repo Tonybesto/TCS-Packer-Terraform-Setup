@@ -7,11 +7,11 @@
 - name: tooling assignment
   import_playbook: ../static-assignments/tooling.yml
 
-- hosts: tag_Name_TCS_wordpress
+- hosts: tag_Name_TCS_wordpress_asg
 - name: wordpress assignment
   import_playbook: ../static-assignments/wordpress.yml
 
-- hosts: tag_Name_TCS_jenkins
+- hosts: tag_Name_TCS_Jenkins
 - name: jenkins assignment
   import_playbook: ../static-assignments/jenkins.yml  
 
@@ -19,9 +19,9 @@
 - name: artifactory assignment
   import_playbook: ../static-assignments/jfrog.yml
 
-- hosts: tag_Name_TCS_sonarqube
+- hosts: tag_Name_TCS_sonbarqube
   user: ubuntu
-- name: sonarqube assignment
+- name: sonbarqube assignment
   import_playbook: ../static-assignments/sonar.yml
 
 

@@ -17,13 +17,13 @@ preferred_number_of_private_subnets = 4
 environment = "Production"
 
 
-ami-web = "ami-01b348332f2551f69"
+ami-web = "ami-018458a99381b7be2"
 
-ami-bastion = "ami-0fea86996afa9133b"
+ami-bastion = "ami-044205c79ad2733c5"
 
-ami-nginx = "ami-089ede0fc7b179343"
+ami-nginx = "ami-09e746f26a0dff354"
 
-ami-sonar = "ami-0f1cf493e255b6777"
+ami-sonar = "ami-0b80779abe33fcd62"
 
 keypair = "devop"
 

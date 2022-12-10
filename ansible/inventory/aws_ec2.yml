@@ -15,8 +15,8 @@ filters:
     - TCS-bastion
     - TCS-nginx
     - TCS-tooling
-    - TCS-wordpress
-    - TCS-sonarqube
+    - TCS-wordpress-asg
+    - TCS-sonbarqube
     - TCS-artifactory
     - TCS-Jenkins
   instance-state-name : running
