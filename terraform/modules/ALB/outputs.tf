@@ -8,7 +8,6 @@ output "alb_target_group_arn" {
   value = aws_lb_target_group.nginx-tgt.arn
 }
 
-
 output "nginx-tgt" {
   description = "External Load balancaer target group"
   value       = aws_lb_target_group.nginx-tgt.arn
