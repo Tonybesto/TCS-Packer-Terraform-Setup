@@ -13,7 +13,7 @@ git clone https://github.com/Tonybesto/tooling.git
 mkdir /var/www/html
 cp -R /tooling/html/*  /var/www/html/
 cd /tooling
-mysql -h rcr-dbmysql.crvnhmpyxtuf.us-east-1.rds.amazonaws.com -u admin -p toolingdb < tooling-db.sql
+mysql -h tcs-dbmysql.crvnhmpyxtuf.us-east-1.rds.amazonaws.com -u admin -p toolingdb < tooling-db.sql
 cd /var/www/html/
 touch healthstatus
 sed -i "s/$db = mysqli_connect('172.31.32.49', 'webaccess', 'password', 'tooling');/$db = mysqli_connect('tcs-database.cgk2jcnauxqt.us-east-2.rds.amazonaws.com', 'TCSadmin', '1234567890', 'toolingdb');/g" functions.php

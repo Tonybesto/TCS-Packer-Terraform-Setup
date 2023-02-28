@@ -1,6 +1,6 @@
 variable "region" {
   type    = string
-  default = "eu-west-2"
+  default = "us-east-1"
 }
 
 locals {

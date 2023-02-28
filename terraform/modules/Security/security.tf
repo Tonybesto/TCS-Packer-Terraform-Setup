@@ -3,7 +3,7 @@ locals {
   security_groups = {
     ext-alb-sg = {
       name        = "ext-alb-sg"
-      description = "for external loadbalncer"
+      description = "for external loadbalancer"
 
     }
 

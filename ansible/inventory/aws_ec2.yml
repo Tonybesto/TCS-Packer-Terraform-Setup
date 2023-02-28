@@ -16,7 +16,7 @@ filters:
     - TCS-nginx
     - TCS-tooling
     - TCS-wordpress-asg
-    - TCS-sonbarqube
+    - TCS-sonarqube
     - TCS-artifactory
     - TCS-Jenkins
   instance-state-name : running

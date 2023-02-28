@@ -1,5 +1,5 @@
 ---
-- hosts: tag_Name_TCS_wordpress
+- hosts: tag_Name_TCS_wordpress_asg
   become: true
   roles:
      - wordpress
