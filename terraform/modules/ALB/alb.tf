@@ -112,7 +112,7 @@ resource "aws_lb_target_group" "tooling-tgt" {
 #   load_balancer_arn = aws_lb.ext-alb.arn
 #   port              = 443
 #   protocol          = "HTTPS"
-#   certificate_arn   = aws_acm_certificate_validation.mytoolz.certificate_arn
+#   certificate_arn   = aws_acm_certificate_validation.akoji.certificate_arn
 
 #   default_action {
 #     type             = "forward" 
@@ -128,7 +128,7 @@ resource "aws_lb_target_group" "tooling-tgt" {
 #   load_balancer_arn = aws_lb.ialb.arn
 #   port              = 443
 #   protocol          = "HTTPS"
-#   certificate_arn   = aws_acm_certificate_validation.mytoolz.certificate_arn
+#   certificate_arn   = aws_acm_certificate_validation.akoji.certificate_arn
 
 #   default_action {
 #     type             = "forward"
@@ -149,7 +149,7 @@ resource "aws_lb_target_group" "tooling-tgt" {
 
 #   condition {
 #     host_header {
-#       values = ["tooling.mytoolz.tk"]
+#       values = ["tooling.akoji.site"]
 #     }
 #   }
 # }

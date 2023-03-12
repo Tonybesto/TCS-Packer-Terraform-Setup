@@ -11,7 +11,7 @@ variable "ami-jfrog" {
 }
 variable "ami-sonar" {
     type = string
-    description = "ami foir sonar"
+    description = "ami for sonar"
 }
 variable "sg-compute" {
     description = "security group for compute instances"

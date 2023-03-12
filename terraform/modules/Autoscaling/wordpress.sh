@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir /var/www/
 sudo mount -t efs -o tls,accesspoint=fsap-001f1cb7432271a8b fs-0a487970ca2f2d267:/ /var/www/
-yum install -y httpd 
+yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
 yum module reset php -y

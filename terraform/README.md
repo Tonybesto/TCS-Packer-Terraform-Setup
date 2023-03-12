@@ -1,7 +1,8 @@
 # TCS-MODULAR-TERRAFORM SETUP
 
-Project 18 of www.darey.io project based DevOps learning platform
+---
+### Project 19 of www.darey.io project based DevOps learning platform
 
-
-![](./Architecture.PNG)
+---
+![](../architecture%20diagram.PNG)
 
