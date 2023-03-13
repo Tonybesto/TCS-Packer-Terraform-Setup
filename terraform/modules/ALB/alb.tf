@@ -135,18 +135,18 @@ resource "aws_lb_target_group" "tooling-tgt" {
 #   }
 # }
 
-resource "aws_lb_listener_rule" "tooling-listener" {
-  listener_arn = aws_lb_listener.web-listener.arn
-  priority     = 99
+# resource "aws_lb_listener_rule" "tooling-listener" {
+#   listener_arn = aws_lb_listener.web-listener.arn
+#   priority     = 99
 
-  action {
-    type             = "forward"
-    target_group_arn = aws_lb_target_group.tooling-tgt.arn
-  }
+#   action {
+#     type             = "forward"
+#     target_group_arn = aws_lb_target_group.tooling-tgt.arn
+#   }
 
-  condition {
-    host_header {
-      values = ["tooling.akoji.site"]
-    }
-  }
-}
+#   condition {
+#     host_header {
+#       values = ["tooling.akoji.site"]
+#     }
+#   }
+# }
