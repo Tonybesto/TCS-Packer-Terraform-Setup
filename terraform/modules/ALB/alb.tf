@@ -1,11 +1,11 @@
 # create an ALB to balance the traffic between the Instances
 
 resource "aws_lb" "ext-alb" {
-  name     = var.name
-  internal = false
+  name            = var.name
+  internal        = false
   security_groups = [var.public-sg]
 
-  subnets =  [var.public-sbn-1,
+  subnets = [var.public-sbn-1,
   var.public-sbn-2, ]
 
   tags = merge(
@@ -18,6 +18,7 @@ resource "aws_lb" "ext-alb" {
   ip_address_type    = var.ip_address_type
   load_balancer_type = var.load_balancer_type
 }
+
 
 
 # ----------------------------
@@ -134,20 +135,18 @@ resource "aws_lb_target_group" "tooling-tgt" {
 #   }
 # }
 
-# #listener rule for tooling target
+resource "aws_lb_listener_rule" "tooling-listener" {
+  listener_arn = aws_lb_listener.web-listener.arn
+  priority     = 99
 
-# resource "aws_lb_listener_rule" "tooling-listener" {
-#   listener_arn = aws_lb_listener.web-listener.arn
-#   priority     = 99
+  action {
+    type             = "forward"
+    target_group_arn = aws_lb_target_group.tooling-tgt.arn
+  }
 
-#   action {
-#     type             = "forward"
-#     target_group_arn = aws_lb_target_group.tooling-tgt.arn
-#   }
-
-#   condition {
-#     host_header {
-#       values = ["tooling.akoji.site"]
-#     }
-#   }
-# }
+  condition {
+    host_header {
+      values = ["tooling.akoji.site"]
+    }
+  }
+}
