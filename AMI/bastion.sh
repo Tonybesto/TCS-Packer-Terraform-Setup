@@ -12,6 +12,7 @@ sudo yum install telnet -y
 sudo yum install htop -y
 sudo yum install git -y
 sudo yum install python3 -y
+sudo dnf install python3-devel
 sudo yum install net-tools -y
 sudo yum install zip -y
 sudo yum install unzip -y
@@ -32,8 +33,9 @@ source ~/.bash_profile
 
 
 # install botocore, ansible and awscli
-sudo python3 -m pip install boto
-sudo python3 -m pip install boto3
+sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3.11 get-pip.py
+pip install boto3 botocore
 sudo python3 -m pip install PyMySQL
 sudo python3 -m pip install mysql-connector-python
 sudo python3 -m pip install --upgrade setuptools

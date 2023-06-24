@@ -17,7 +17,7 @@ resource "aws_autoscaling_group" "wordpress-asg" {
   }
   tag {
     key                 = "Name"
-    value               = "TCS-wordpress-asg"
+    value               = "TCS-wordpress"
     propagate_at_launch = true
   }
 }
