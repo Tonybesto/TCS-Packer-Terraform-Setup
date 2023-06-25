@@ -24,7 +24,7 @@ ami-sonar = "ami-00c799aded68035ba"
 keypair = "devops"
 
 # Ensure to change this to your acccount number
-account_no = "571131858325"
+account_no = "128799896891"
 
 master-username = "tony"
 
