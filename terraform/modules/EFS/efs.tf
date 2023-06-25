@@ -9,7 +9,7 @@ resource "aws_kms_key" "TCS-kms" {
     {
       "Sid": "Enable IAM User Permissions",
       "Effect": "Allow",
-      "Principal": { "AWS": "arn:aws:iam::${var.account_no}:user/anthony" },
+      "Principal": { "AWS": "arn:aws:iam::${var.account_no}:user/TonyBesto" },
       "Action": "kms:*",
       "Resource": "*"
     }
