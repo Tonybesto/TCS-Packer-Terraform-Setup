@@ -15,7 +15,7 @@ filters:
     - TCS-bastion
     - TCS-nginx
     - TCS-tooling
-    - TCS-wordpress-asg
+    - TCS-wordpress
     - TCS-sonarqube
     - TCS-artifactory
     - TCS-Jenkins

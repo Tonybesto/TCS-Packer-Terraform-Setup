@@ -7,7 +7,7 @@
 - name: tooling assignment
   import_playbook: ../static-assignments/tooling.yml
 
-- hosts: tag_Name_TCS_wordpress_asg
+- hosts: tag_Name_TCS_wordpress
 - name: wordpress assignment
   import_playbook: ../static-assignments/wordpress.yml
 
