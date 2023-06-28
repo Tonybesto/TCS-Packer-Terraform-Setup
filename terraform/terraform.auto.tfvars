@@ -34,6 +34,6 @@ master-password = "devopspbl"
 tags = {
   Owner-Email     = "akojianthony2@gmail.com"
   Managed-By      = "terraform"
-  Billing-Account = "123456789"
+  Billing-Account = "1234567890"
 } 
 
