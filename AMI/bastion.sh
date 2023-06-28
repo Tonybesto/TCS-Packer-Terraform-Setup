@@ -1,8 +1,8 @@
 # user data for bastion
 
 #!/bin/bash
-sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-sudo yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm 
+sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+sudo yum install -y dnf-utils http://rpms.remirepo.net/enterprise/remi-release-9.rpm 
 sudo yum update -y 
 sudo yum upgrade -y
 sudo yum install mysql-server -y 
@@ -35,7 +35,7 @@ source ~/.bash_profile
 # install botocore, ansible and awscli
 sudo curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3.11 get-pip.py
-pip install boto3 botocore
+pip3 install boto3 botocore
 sudo python3 -m pip install PyMySQL
 sudo python3 -m pip install mysql-connector-python
 sudo python3 -m pip install --upgrade setuptools
