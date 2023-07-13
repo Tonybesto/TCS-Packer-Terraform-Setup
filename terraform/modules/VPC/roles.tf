@@ -23,7 +23,6 @@ resource "aws_iam_role" "ec2_instance_role" {
 }
 
 
-
 resource "aws_iam_policy" "policy" {
   name        = "ec2_instance_policy"
   description = "A test policy"
@@ -49,8 +48,6 @@ resource "aws_iam_policy" "policy" {
   )
 
 }
-
-
 
 resource "aws_iam_role_policy_attachment" "test-attach" {
   role       = aws_iam_role.ec2_instance_role.name

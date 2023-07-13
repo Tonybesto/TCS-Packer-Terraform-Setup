@@ -1,7 +1,7 @@
 # create instance for jenkins
 resource "aws_instance" "Jenkins" {
   ami                         = var.ami-jenkins
-  instance_type               = "t2.micro"
+  instance_type               = "t2.medium"
   subnet_id                   = var.subnets-compute
   vpc_security_group_ids      = var.sg-compute
   associate_public_ip_address = true
